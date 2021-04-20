@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+} 
+
+:root {
+    --orange: #e28525;
+    --teal: #016972;
+    --green: #00403f;
+    --white: white;
+    --lightgray: hsl(0, 0%, 95%);
+    --font-size: 15px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    height: max-content;
+}
+
+.card {
+    width: 300px;
+    padding: 50px;
+}
+
+.flex-item-1 {
+    order: 0;
+    flex: 0 0 auto;
+    align-self: auto;
+    border-radius: 10px 0 0 10px;   
+    background-color: var(--orange);
+}
+.flex-item-2 {
+    order: 0;
+    flex: 0 0 auto;
+    align-self: auto;
+    background-color: var(--teal);
+}
+.flex-item-3 {
+    order: 0;
+    flex: 0 0 auto;
+    align-self: auto;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--green);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-top: 3vh;
+    padding-bottom: 40px;
+    color: var(--white);
+}
+
+h4 {
+    font-size: var(--font-size);
+    color: var(--lightgray);
+    font-weight: 300;
+    margin-bottom: 3vh;
+}
+
+button {
+    background-color: var(--lightgray);
+    margin-top: 4vh;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn1 {
+    color: var(--orange);
+
+}
+
+.btn2 {
+    color: var(--teal);
+    
+}
+
+.btn3 {
+    color: var(--green);
+    
+}
+
+@media only screen and (max-width: 40em)  {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+
+    .flex-item-1 {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .flex-item-3 {
+        border-radius: 0 0 10px 10px;
+    }
+
+    button {
+        margin-top: 2vh;
+    }
+
+    h1 {
+        padding-bottom: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+
+    .flex-item-1 {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .flex-item-3 {
+        border-radius: 0 0 10px 10px;
+    }
+
+    h1 {
+        padding-bottom: 30px;
+    }
+  }
