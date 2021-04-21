@@ -9,7 +9,7 @@
 } 
 
 :root {
-    --orange: #e28525;
+    --orange: #aa5700;
     --teal: #016972;
     --green: #00403f;
     --white: white;
@@ -72,7 +72,7 @@ h1 {
     color: var(--white);
 }
 
-h4 {
+h2 {
     font-size: var(--font-size);
     color: var(--lightgray);
     font-weight: 300;
